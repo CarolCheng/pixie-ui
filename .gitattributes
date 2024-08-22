@@ -1,0 +1,12 @@
+# 對所有文本文件使用 LF 換行符
+* text=auto eol=lf
+
+# 強制特定文件類型使用 LF
+*.sh text eol=lf
+*.js text eol=lf
+*.html text eol=lf
+
+# 二進制文件不做換行符處理
+*.png binary
+*.jpg binary
+*.gif binary

@@ -1,0 +1,6 @@
+[submodule "submodules/naikaifont"]
+	path = submodules/naikaifont
+	url = https://github.com/max32002/naikaifont.git
+[submodule "submodules/open-huninn-font"]
+	path = submodules/open-huninn-font
+	url = https://github.com/marsnow/open-huninn-web-font.git

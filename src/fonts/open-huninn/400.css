@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Open Huninn';
+    src: url('../../../public/fonts/open-huninn-font/jf-openhuninn.woff2') format('woff2'),
+        url('../../../public/fonts/open-huninn-font/jf-openhuninn.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}

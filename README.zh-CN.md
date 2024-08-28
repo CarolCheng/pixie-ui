@@ -1,6 +1,6 @@
-# PIXIE-UI
-
 [English Documentation](./README.md)
+
+# PIXIE-UI
 
 **PIXIE-UI** 是一個專為可愛風設計的 React UI 元件庫，旨在為您的應用程序提供簡單、易於使用且風格鮮明的 UI 元件。
 此庫中的元件設計靈感來自於可愛風格，適合於各種需要柔和、俏皮設計的應用。

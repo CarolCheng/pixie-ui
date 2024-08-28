@@ -1,6 +1,6 @@
-# PIXIE-UI
-
 [中文文檔](./README.zh-CN.md)
+
+# PIXIE-UI
 
 **PIXIE-UI** is a React UI component library designed with a cute and playful style, aimed at providing simple, easy-to-use, and visually distinctive components for your applications. The components in this library are inspired by a cute design aesthetic, making them perfect for applications that need a soft, whimsical touch.
 
@@ -41,7 +41,6 @@ function App() {
   );
 }
 ```
-
 
 ## Roadmap
 

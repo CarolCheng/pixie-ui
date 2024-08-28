@@ -1,5 +1,5 @@
 {
-  "name": "pixie-ui",
+  "name": "@carolcheng/pixie-ui",
   "version": "0.1.0",
   "description": "A cute-themed UI component library with fonts.",
   "main": "dist/index.js",
@@ -13,7 +13,8 @@
     "build": "webpack --config webpack.config.js --mode production",
     "clean": "rmdir -rf dist",
     "preview": "npx serve dist",
-    "link-fonts": "node src/createSymbolicLink.js"
+    "link-fonts": "node src/createSymbolicLink.js",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "UI library",
@@ -46,5 +47,8 @@
   "dependencies": {
     "file-loader": "^6.2.0",
     "prop-types": "^15.8.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }

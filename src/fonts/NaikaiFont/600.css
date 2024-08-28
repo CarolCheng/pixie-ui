@@ -1,7 +1,0 @@
-@font-face {
-    font-family: 'NaikaiFont';
-    src: url('../../../public/fonts/naikaifont/NaikaiFont-Bold.woff2') format('woff2'),
-        url('../../../public/fonts/naikaifont/NaikaiFont-Bold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}

@@ -35,7 +35,6 @@ npm install pixie-ui
    - "400": Regular
    - "600": SemiBold
    - "700": Bold
-   - "lite": 精簡版
 
 ```javascript
 import React from 'react';
@@ -43,16 +42,17 @@ import { NaikaiFont } from 'pixie-ui';
 
 const App = () => (
   <div>
-    <Text weight="400">Regular 文本</Text>
-    <Text weight="600">Semi-Bold 文本</Text>
-    <Text weight="lite">精簡版文本</Text>
+    <Text fontFamily={FontFamilies.NAIKAI} weight={FontWeights.EXTRA_LIGHT}>{args.text || "這是瀨戶字體 EXTRA_LIGHT 的預設文本。"}</Text>
+    <Text fontFamily={FontFamilies.NAIKAI} weight={FontWeights.LIGHT}>{args.text || "這是瀨戶字體 LIGHT 的預設文本。"}</Text>
+    <Text fontFamily={FontFamilies.NAIKAI} weight={FontWeights.REGULAR}>{args.text || "這是瀨戶字體 Regular 的預設文本。"}</Text>
+    <Text fontFamily={FontFamilies.NAIKAI} weight={FontWeights.SEMI_BOLD}>{args.text || "這是瀨戶字體 SEMI_BOLD 的預設文本。"}</Text>
+    <Text fontFamily={FontFamilies.NAIKAI} weight={FontWeights.BOLD}>{args.text || "這是瀨戶字體 Bold 的預設文本。"}</Text>
+    <Text fontFamily={FontFamilies.OPEN_HUNINN} weight={FontWeights.REGULAR}>{args.text || "這是粉圓體 Regular 的預設文本。"}</Text>
   </div>
 );
 export default App;
 
 ```
-
-
 
 
 ## 元件計劃

@@ -5,8 +5,8 @@ const os = require('os');
 
 // 定義要創建符號連結的源目錄和目標目錄
 const directories = [
-    { source: path.join(__dirname, '../submodules/naikaifont/webfont'), dest: path.join(__dirname, '../public/fonts/naikaifont') },
-    { source: path.join(__dirname, '../submodules/open-huninn-font/font'), dest: path.join(__dirname, '../public/fonts/open-huninn-font') },
+    { source: path.join(__dirname, '../submodules/naikaifont/webfont'), dest: path.join(__dirname, '/fonts/naikaifont') },
+    { source: path.join(__dirname, '../submodules/open-huninn-font/font'), dest: path.join(__dirname, '/fonts/open-huninn-font') },
 ];
 
 // 刪除現有目錄的函數

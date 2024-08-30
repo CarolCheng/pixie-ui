@@ -1,8 +1,12 @@
-import React, { useState } from "react";
-import Text from "./components/Text";
-import { ThemeProvider } from "./utils/ThemeProvider";
+import React, { useState } from 'react';
+import { ThemeProvider } from './theme/ThemeProvider';
 import { FontFamilies } from './constants/fontFamilies';  // 字體巨集
 import { FontWeights } from './constants/fontWeights';  // 字重巨集
+import { colorThemes } from './theme/colortheme';
+
+import PuffButton from "./components/buttons/PuffButton";
+import Text from "./components/Text";
+
 
 function App() {
   const [fontFamily, setFontFamily] = useState(FontFamilies.NAIKAI);
@@ -55,8 +59,9 @@ function App() {
       </div>
 
       {/* ThemeProvider 包裹文本組件，動態應用字體樣式 */}
-      <ThemeProvider fontFamily={fontFamily} fontWeight={fontWeight}>
+      <ThemeProvider fontFamily={fontFamily} fontWeight={fontWeight} colorThemes={colorThemes} >
         <Text>這是 {fontFamily} 字體</Text>
+        <PuffButton>Click Here</PuffButton>
       </ThemeProvider>
     </div >
   );

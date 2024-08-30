@@ -3,10 +3,17 @@ import PropTypes from 'prop-types';
 import { FontFamilies } from '../constants/fontFamilies';
 import { FontWeights } from '../constants/fontWeights';
 import { fontConfigs } from '../constants/fontConfigs';
+import { colorThemes as defaultColorThemes } from '../theme/colortheme';
 
 const ThemeContext = createContext();
 
-export const ThemeProvider = ({ children, fontFamily = FontFamilies.NAIKAI, fontWeight = FontWeights.REGULAR }) => {
+export const ThemeProvider = ({
+    children,
+    fontFamily = FontFamilies.NAIKAI,
+    fontWeight = FontWeights.REGULAR,
+    colorTheme = defaultColorThemes
+}) => {
+
     useEffect(() => {
         const fontConfig = fontConfigs[fontFamily]?.[fontWeight];
 
@@ -40,6 +47,7 @@ export const ThemeProvider = ({ children, fontFamily = FontFamilies.NAIKAI, font
     const theme = {
         fontFamily,
         fontWeight,
+        colors: colorTheme
     };
 
     return <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>;
@@ -50,6 +58,7 @@ ThemeProvider.propTypes = {
     children: PropTypes.node.isRequired,
     fontFamily: PropTypes.string,
     fontWeight: PropTypes.number,
+    colorTheme: PropTypes.object,
 };
 
 export const useTheme = () => useContext(ThemeContext);

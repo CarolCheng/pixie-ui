@@ -8,9 +8,10 @@ const PuffButton = ({
     children,
     state = 'normal',
     onClick = () => { },
-    disabled = false
+    disabled = false,
+    ...props
 }) => {
-    const { fontFamily, fontWeight, colors } = useTheme();  // 獲取主題中的字體和字重
+    const { fontFamily, fontWeight, colors } = useTheme();  // Get font and weight from the theme
     const svgUrl = require('@assets/dot.svg');
 
     const buttonStyle = {
@@ -31,6 +32,7 @@ const PuffButton = ({
             style={buttonStyle}
             onClick={onClick}
             disabled={disabled}
+            {...props} // Pass additional properties to the button element
         >
             {children}
         </button >
@@ -40,7 +42,7 @@ const PuffButton = ({
 
 PuffButton.propTypes = {
     children: PropTypes.node.isRequired,
-    state: PropTypes.oneOf(['normal', 'hover', 'active', 'disabled']),
+    type: PropTypes.oneOf(['dot', 'circle', 'active', 'disabled']),
     onClick: PropTypes.func,
     disabled: PropTypes.bool,
 };

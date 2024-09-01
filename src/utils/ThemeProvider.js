@@ -1,9 +1,9 @@
 import React, { createContext, useContext, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { FontFamilies } from '../constants/fontFamilies';
-import { FontWeights } from '../constants/fontWeights';
-import { fontConfigs } from '../constants/fontConfigs';
-import { colorThemes as defaultColorThemes } from '../theme/colortheme';
+import { FontFamilies } from '@/utils/fontFamilies'
+import { FontWeights } from '@/utils/fontWeights'
+import { fontConfigs } from '@/utils/fontConfigs';
+import { colorThemes as defaultColorThemes } from '@/utils/colortheme';
 
 const ThemeContext = createContext();
 

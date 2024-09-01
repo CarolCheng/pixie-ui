@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '../theme/ThemeProvider';
+import { useTheme } from '@/utils/ThemeProvider';
 
 const Text = ({ children, className = '', style = {} }) => {
     const { fontFamily, fontWeight, colors } = useTheme();  // 獲取主題中的字體和字重

@@ -4,7 +4,7 @@ export const colorThemes = {
         primary: '#FFC0CB', // Light color
         secondary: '#E6E6FA',  // Lavender
         tertiary: '#D8BFD8',  // Thistle (Light Purple)
-        accent1: '#FFFACD',  // Light yellow
+        accent1: '#FFFFF0',  // Light yellow
         accent2: '#B0E0E6',  // Light blue
     },
     // Grayscale: Used for backgrounds, borders, text, and less emphasized UI elements

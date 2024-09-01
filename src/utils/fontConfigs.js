@@ -1,4 +1,4 @@
-import { FontFamilies } from '../constants/fontFamilies';
+import { FontFamilies } from '@/utils/fontFamilies'
 // 字體配置文件
 export const fontConfigs = {
     [FontFamilies.NAIKAI]: {

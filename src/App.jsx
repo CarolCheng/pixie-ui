@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { ThemeProvider } from './theme/ThemeProvider';
-import { FontFamilies } from './constants/fontFamilies';  // 字體巨集
-import { FontWeights } from './constants/fontWeights';  // 字重巨集
-import { colorThemes } from './theme/colortheme';
+import { ThemeProvider } from '@/utils/ThemeProvider';
+import { FontFamilies } from '@/utils/fontFamilies';  // 字體巨集
+import { FontWeights } from '@/utils/fontWeights';  // 字重巨集
+import { colorThemes } from '@/utils/colortheme';
 
-import PuffButton from "./components/buttons/PuffButton";
-import Text from "./components/Text";
+import PuffButton from "@/components/buttons/PuffButton";
+import Text from "@/components/Text";
 
 
 function App() {

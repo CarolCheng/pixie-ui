@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './PuffButton.module.css';
-import { useTheme } from '../../theme/ThemeProvider';
+import { useTheme } from '@/utils/ThemeProvider';
 
 const PuffButton = ({
     children,
@@ -12,7 +12,7 @@ const PuffButton = ({
     ...props
 }) => {
     const { fontFamily, fontWeight, colors } = useTheme();  // Get font and weight from the theme
-    const svgUrl = require('@assets/dot.svg');
+    const svgUrl = require('@assets/buttons/dot.svg');
 
     const buttonStyle = {
         fontFamily,

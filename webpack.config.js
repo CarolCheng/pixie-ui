@@ -16,7 +16,8 @@ module.exports = (env, argv) => {
         },
         resolve: {
             alias: {
-                '@fonts': path.resolve(__dirname, 'src/fonts'),  // 為字體文件夾設置一個別名
+                '@': path.resolve(__dirname, 'src'),  // 為字體文件夾設置一個別名
+                '@fonts': path.resolve(__dirname, 'src/assets/fonts'),  // 為字體文件夾設置一個別名
                 '@assets': path.resolve(__dirname, 'src/assets'),  // 為字體文件夾設置一個別名
             },
             extensions: ['.js', '.jsx']
